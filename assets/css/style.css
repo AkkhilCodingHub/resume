@@ -591,6 +591,51 @@ img {
   transform: translate(6px, -7px);
 }
 
+/*==================== QUALIFICATION WORK CARDS ====================*/
+.qualification__work-item {
+  background-color: var(--container-color);
+  padding: 1.5rem;
+  border-radius: .5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+  border: 1px solid var(--scroll-bar-color);
+  margin-bottom: 1.5rem;
+  transition: .3s;
+}
+
+.qualification__work-item:hover {
+  border-color: var(--first-color);
+  transform: translateY(-4px);
+  box-shadow: 0 4px 8px rgba(0,0,0,.15);
+}
+
+.qualification__work-header {
+  margin-bottom: .75rem;
+}
+
+.qualification__work-bullets {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.qualification__work-bullets li {
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+  position: relative;
+  padding-left: 1.25rem;
+  text-align: left;
+}
+
+.qualification__work-bullets li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--first-color);
+  font-weight: bold;
+}
+
 /*==================== SERVICES ====================*/
 .services__container {
   gap: 1.5rem;
